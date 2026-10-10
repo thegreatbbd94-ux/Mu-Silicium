@@ -36,6 +36,8 @@
   gEfiMdeModulePkgTokenSpaceGuid.PcdAcpiDefaultOemRevision|0x7435
 !elseif $(SOC_TYPE) == 1
   gEfiMdeModulePkgTokenSpaceGuid.PcdAcpiDefaultOemRevision|0x6450
+!elseif $(SOC_TYPE) == 2
+  gEfiMdeModulePkgTokenSpaceGuid.PcdAcpiDefaultOemRevision|0x6435
 !endif
 
   #
@@ -59,6 +61,9 @@
 !elseif $(SOC_TYPE) == 1
   gSiliciumPkgTokenSpaceGuid.PcdSmbiosProcessorModel|"Snapdragon (TM) 6 Gen 1 @ 2.20 GHz"
   gSiliciumPkgTokenSpaceGuid.PcdSmbiosProcessorPartNumber|"SM6450"
+!elseif $(SOC_TYPE) == 2
+  gSiliciumPkgTokenSpaceGuid.PcdSmbiosProcessorModel|"Snapdragon (TM) 6s Gen 4 @ 2.40 GHz"
+  gSiliciumPkgTokenSpaceGuid.PcdSmbiosProcessorPartNumber|"SM6435-AA"
 !endif
 
 [LibraryClasses]
